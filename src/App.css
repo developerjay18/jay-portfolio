@@ -1,0 +1,45 @@
+.text-gradient {
+  background: linear-gradient(to right, #b16cea 20%, #ff5e69, #ff8a56, #ffa84b);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.bg-gradient {
+  background-image: linear-gradient(
+    to right,
+    #b16cea 10%,
+    #ff5e69,
+    #ff8a56,
+    #ffa84b
+  );
+}
+
+.border-gradient {
+  background: linear-gradient(#f0f2f5, #f0f2f5) padding-box,
+    linear-gradient(to right, #b16cea 10%, #ff5e69, #ff8a56, #ffa84b) border-box;
+  border: 2px solid transparent;
+}
+
+.tap-transp {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.bg-hero-section {
+  background-image: url('./assets/bg.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.br-gradient {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(
+      to right,
+      #b16cea 10%,
+      #ff5e69,
+      #ff8a56,
+      #ffa84b
+    )
+    1;
+}
