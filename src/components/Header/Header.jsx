@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -7,9 +8,11 @@ function Header() {
         <div className="heading uppercase font-semibold text-3xl md:text-4xl text-whiteSecondary">
           JayRai
         </div>
-        <div className="home-logo cursor-pointer tap-transp">
-          <i className="fa-solid fa-house-chimney-user fa-xl text-gradient px-4 hover:shadow-lg hover:shadow-gradientPurple rounded-full py-6"></i>
-        </div>
+        <Link to={'/'}>
+          <div className="home-logo cursor-pointer tap-transp">
+            <i className="fa-solid fa-house-chimney-user fa-xl text-gradient px-4 hover:shadow-lg hover:shadow-gradientPurple rounded-full py-6"></i>
+          </div>
+        </Link>
       </nav>
     </div>
   );

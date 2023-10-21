@@ -37,7 +37,7 @@ function HeroSection() {
 
   return (
     <div className="font-baiJamjuree w-full -mt-24">
-      <div className="flex flex-col lg:flex-row border px-7 md:px-24 py-[25%] md:py-[17%] lg:py-[11%] h-full bg-hero-section">
+      <div className="flex flex-col lg:flex-row px-7 md:px-24 py-[25%] md:py-[17%] lg:py-[11%] h-full bg-hero-section">
         {/* left section */}
 
         <div className="left-up w-full lg:w-[60%]">
@@ -82,7 +82,7 @@ function HeroSection() {
               </button>
             </Link>
             <Link
-              to={'wa.me/+916351468706'}
+              to={'https://wa.me/+916351468706'}
               className="w-[57%] md:w-[35%] lg:w-[26%]"
             >
               <button className="br-gradient px-3 py-2  text-whitePrimary animate-pulse hover:shadow-lg hover:shadow-gradientPurple text-lg flex items-center justify-center gap-3">
