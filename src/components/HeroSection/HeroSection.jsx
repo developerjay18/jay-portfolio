@@ -76,17 +76,24 @@ function HeroSection() {
           </motion.div>
 
           <div className="buttons flex gap-5 lg:gap-8 flex-col md:flex-row">
-            {/* <Link to={"/contact"}> */}
-            <button className="br-gradient px-3 py-2 w-[30%] md:w-[22%] lg:w-[16%] text-whitePrimary animate-pulse hover:shadow-lg hover:shadow-gradientPurple text-lg">
-              Hire me
-            </button>
-            {/* </Link> */}
-            {/* <Link to={'wa.me/+916351468706'}> */}
-            <button className="br-gradient px-3 py-2 w-[57%] md:w-[35%] lg:w-[26%] text-whitePrimary animate-pulse hover:shadow-lg hover:shadow-gradientPurple text-lg flex items-center justify-center gap-3">
-              WhatsApp me{' '}
-              <img src={WhatsappIcon} alt="whatsapp-icon" className="w-[15%]" />
-            </button>
-            {/* </Link> */}
+            <Link to={'/contact'} className="w-[30%] md:w-[22%] lg:w-[16%]">
+              <button className="br-gradient px-3 py-2  text-whitePrimary animate-pulse hover:shadow-lg hover:shadow-gradientPurple text-lg">
+                Hire me
+              </button>
+            </Link>
+            <Link
+              to={'wa.me/+916351468706'}
+              className="w-[57%] md:w-[35%] lg:w-[26%]"
+            >
+              <button className="br-gradient px-3 py-2  text-whitePrimary animate-pulse hover:shadow-lg hover:shadow-gradientPurple text-lg flex items-center justify-center gap-3">
+                WhatsApp me{' '}
+                <img
+                  src={WhatsappIcon}
+                  alt="whatsapp-icon"
+                  className="w-[15%]"
+                />
+              </button>
+            </Link>
           </div>
         </div>
 
