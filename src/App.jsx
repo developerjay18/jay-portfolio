@@ -1,11 +1,12 @@
+import { Outlet } from 'react-router-dom';
 import './App.css';
-import { Header, Footer,HeroSection } from './components';
+import { Header, Footer } from './components';
 
 function App() {
   return (
     <>
       <Header />
-      <HeroSection/>
+      <Outlet />
       <Footer />
     </>
   );
