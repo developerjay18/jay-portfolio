@@ -31,6 +31,12 @@
   background-position: center;
 }
 
+.bg-footer-section {
+  background-image: url('./assets/footer-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
 .br-gradient {
   border-width: 2px;
   border-style: solid;
