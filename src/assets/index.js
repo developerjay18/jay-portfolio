@@ -22,8 +22,10 @@ import Vercel from './vercel.png';
 import BGLeft from './color-bg-left.png';
 import BGRight from './color-bg-right.png';
 import Bootstrap from "./Bootstrap.png"
+import Developer from "./developer.svg"
 
 export {
+  Developer,
   Appwrite,
   AWS,
   Express,
