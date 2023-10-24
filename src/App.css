@@ -45,6 +45,12 @@
   background-position: center;
 }
 
+.bg-right{
+  background-image: url('./assets/color-bg-right.png');
+  background-size: cover;
+  background-position: center;
+}
+
 .br-gradient {
   border-width: 2px;
   border-style: solid;
@@ -112,9 +118,14 @@
 }
 
 .glassy-div {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.123);
   backdrop-filter: blur(10px) saturate(180%);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.bg-blur {
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.2); /* Change the color and opacity as needed */
 }
