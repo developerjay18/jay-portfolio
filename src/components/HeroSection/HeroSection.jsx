@@ -83,10 +83,10 @@ function HeroSection() {
             </Link>
             <Link
               to={'https://wa.me/+916351468706'}
-              className="w-[57%] md:w-[35%] lg:w-[26%]"
+              className="w-[68%] md:w-[35%] lg:w-[35%]"
             >
               <button className="br-gradient px-3 py-2  text-whitePrimary animate-pulse hover:shadow-lg hover:shadow-gradientPurple text-lg flex items-center justify-center gap-3">
-                WhatsApp me{' '}
+                Freelance with me{' '}
                 <img
                   src={WhatsappIcon}
                   alt="whatsapp-icon"
