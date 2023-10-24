@@ -1,3 +1,5 @@
+/* glassy div */
+
 .text-gradient {
   background: linear-gradient(to right, #b16cea 20%, #ff5e69, #ff8a56, #ffa84b);
   -webkit-text-fill-color: transparent;
@@ -37,6 +39,12 @@
   background-position: center;
 }
 
+.bg-left {
+  background-image: url('./assets/color-bg-left.png');
+  background-size: cover;
+  background-position: center;
+}
+
 .br-gradient {
   border-width: 2px;
   border-style: solid;
@@ -48,4 +56,65 @@
       #ffa84b
     )
     1;
+}
+
+.moving-div {
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {
+    border-radius: 73% 27% 70% 30% / 27% 20% 80% 73%;
+  }
+}
+
+.br-fancy {
+  border-radius: 73% 27% 70% 30% / 27% 20% 80% 73%;
+}
+
+/* CSS for marquee div */
+.scroll-content {
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(190%);
+  }
+  100% {
+    transform: translateX(-190%);
+  }
+}
+
+/* mobile marquee stylings */
+@media (max-width: 767px) {
+  .scroll-content {
+    animation: marquee 15s linear infinite;
+  }
+
+  .paused {
+    animation-play-state: paused;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(470%); 
+    }
+    100% {
+      transform: translateX(-470%); 
+    }
+  }
+}
+
+.glassy-div {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px) saturate(180%);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
