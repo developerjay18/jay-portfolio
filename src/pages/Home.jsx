@@ -1,12 +1,21 @@
 import React from 'react';
-import { HeroSection, Container, AboutSection,SkillsSection } from '../components';
+import {
+  HeroSection,
+  Container,
+  AboutSection,
+  SkillsSection,
+  ProjectsSection,
+  ContactSection,
+} from '../components';
 
 function Home() {
   return (
     <Container>
       <HeroSection />
       <AboutSection />
-      <SkillsSection/>
+      <SkillsSection />
+      <ProjectsSection />
+      <ContactSection />
     </Container>
   );
 }
