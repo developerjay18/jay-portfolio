@@ -40,7 +40,14 @@ function ContactSection() {
         </h2>
 
         <div className="form w-full">
-          <form action="#" method="post" className="flex flex-col gap-5">
+          <form
+            action="#"
+            method="post"
+            className="flex flex-col gap-5"
+            onClick={(e) => {
+              e.preventDefault();
+            }}
+          >
             <div className="flex gap-5 flex-col md:flex-row">
               <input
                 type="text"
@@ -63,8 +70,9 @@ function ContactSection() {
               cols="30"
               rows="6"
               className="w-full glassy-div rounded-md p-2 focus:outline-none cursor-pointer focus:bg-[#474747]"
+              defaultValue="Message"
             >
-              Message
+              
             </textarea>
             <button
               type="submit"

@@ -66,22 +66,20 @@ function SkillsSection() {
       {/* techstack section */}
       <div className=" w-full flex justify-between py-5 flex-wrap md:flex-nowrap gap-y-6">
         {stackData.map((stackItem) => (
-          <>
-            <div className="w-[47%] md:w-[20%] tap-transp">
-              <motion.div
-                initial="initial"
-                whileHover="hover"
-                variants={hoverVariants}
-                className="upward-hover-div  w-full h-full cursor-pointer"
-              >
-                <img
-                  src={stackItem.url}
-                  alt="tech-stack"
-                  className="w-full h-full object-cover p-5 br-gradient"
-                />
-              </motion.div>
-            </div>
-          </>
+          <div className="w-[47%] md:w-[20%] tap-transp" key={stackItem.url}>
+            <motion.div
+              initial="initial"
+              whileHover="hover"
+              variants={hoverVariants}
+              className="upward-hover-div  w-full h-full cursor-pointer"
+            >
+              <img
+                src={stackItem.url}
+                alt="tech-stack"
+                className="w-full h-full object-cover p-5 br-gradient"
+              />
+            </motion.div>
+          </div>
         ))}
       </div>
 

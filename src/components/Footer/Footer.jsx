@@ -45,17 +45,19 @@ function Footer() {
         <div className="flex flex-col gap-7">
           <div className="social-icons flex gap-6 justify-center lg:justify-end items-center">
             {socialIcons.map((social) => (
-              <>
-                <Link to={social.slug} className="w-[10%] lg:w-[7%]">
-                  <div className="cursor-pointer w-full">
-                    <img
-                      src={social.ImgURL}
-                      alt="social-media-icon"
-                      className=" hover:shadow-lg hover:shadow-gradientPurple rounded-xl w-full"
-                    />
-                  </div>
-                </Link>
-              </>
+              <Link
+                to={social.slug}
+                className="w-[10%] lg:w-[7%]"
+                key={social.slug}
+              >
+                <div className="cursor-pointer w-full">
+                  <img
+                    src={social.ImgURL}
+                    alt="social-media-icon"
+                    className=" hover:shadow-lg hover:shadow-gradientPurple rounded-xl w-full"
+                  />
+                </div>
+              </Link>
             ))}
           </div>
           <div className="copyright flex justify-center lg:justify-end capitalize font-inter text-lightGrey">

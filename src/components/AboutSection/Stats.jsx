@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useId } from 'react';
 import CountUp from 'react-countup';
-import { motion, useAnimation } from 'framer-motion';
 
 function Stats() {
   const [isCounting, setIsCounting] = useState(false);
@@ -47,27 +46,27 @@ function Stats() {
   return (
     <div className="font-baiJamjuree w-full flex py-7 lg:py-12 my-8 lg:my-10 justify-between br-gradient flex-col md:flex-row flex-wrap gap-12 md:gap-0 lg:gap-0">
       {statsData.map((data) => (
-        <>
-          <div
-            id="count-up-section"
-            className="w-full md:w-[50%] lg:w-[17%]"
-            key={data.number}
-          >
-            {isCounting && (
-              <CountUp end={data.number} duration={4} delay={1}>
-                {({ countUpRef }) => (
-                  <div className="flex flex-col justify-center items-center gap-3 md:py-5 lg:py-0">
-                    <div className=" text-4xl lg:text-5xl text-gradient font-semibold ">
-                      <span ref={countUpRef} />
-                      <span>+</span>
-                    </div>
-                    <div className="text-md md:text-lg capitalize">{data.title}</div>
+        <div
+          id="count-up-section"
+          className="w-full md:w-[50%] lg:w-[17%]"
+          key={data.number}
+        >
+          {isCounting && (
+            <CountUp end={data.number} duration={4} delay={1}>
+              {({ countUpRef }) => (
+                <div className="flex flex-col justify-center items-center gap-3 md:py-5 lg:py-0">
+                  <div className=" text-4xl lg:text-5xl text-gradient font-semibold ">
+                    <span ref={countUpRef} />
+                    <span>+</span>
                   </div>
-                )}
-              </CountUp>
-            )}
-          </div>
-        </>
+                  <div className="text-md md:text-lg capitalize">
+                    {data.title}
+                  </div>
+                </div>
+              )}
+            </CountUp>
+          )}
+        </div>
       ))}
     </div>
   );
