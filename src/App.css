@@ -1,4 +1,4 @@
-/* glassy div */
+/* makes text gradient */
 
 .text-gradient {
   background: linear-gradient(to right, #b16cea 20%, #ff5e69, #ff8a56, #ffa84b);
@@ -6,6 +6,8 @@
   -webkit-background-clip: text;
   background-clip: text;
 }
+
+/* makes background gradient */
 
 .bg-gradient {
   background-image: linear-gradient(
@@ -17,15 +19,34 @@
   );
 }
 
+/* makes border gradient */
+
 .border-gradient {
   background: linear-gradient(#f0f2f5, #f0f2f5) padding-box,
     linear-gradient(to right, #b16cea 10%, #ff5e69, #ff8a56, #ffa84b) border-box;
   border: 2px solid transparent;
 }
 
+.br-gradient {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(
+      to right,
+      #b16cea 10%,
+      #ff5e69,
+      #ff8a56,
+      #ffa84b
+    )
+    1;
+}
+
+/* makes div transparent on tap */
+
 .tap-transp {
   -webkit-tap-highlight-color: transparent;
 }
+
+/* background designs with images */
 
 .bg-hero-section {
   background-image: url('./assets/bg.webp');
@@ -45,24 +66,13 @@
   background-position: center;
 }
 
-.bg-right{
+.bg-right {
   background-image: url('./assets/color-bg-right.png');
   background-size: cover;
   background-position: center;
 }
 
-.br-gradient {
-  border-width: 2px;
-  border-style: solid;
-  border-image: linear-gradient(
-      to right,
-      #b16cea 10%,
-      #ff5e69,
-      #ff8a56,
-      #ffa84b
-    )
-    1;
-}
+/* moving border div designs and animations */
 
 .moving-div {
   animation: mymove 5s infinite;
@@ -97,7 +107,7 @@
   }
 }
 
-/* mobile marquee stylings */
+/* --> CSS for marquee div (mobile)*/
 @media (max-width: 767px) {
   .scroll-content {
     animation: marquee 15s linear infinite;
@@ -109,13 +119,15 @@
 
   @keyframes marquee {
     0% {
-      transform: translateX(470%); 
+      transform: translateX(470%);
     }
     100% {
-      transform: translateX(-470%); 
+      transform: translateX(-470%);
     }
   }
 }
+
+/* designs for glassy effect divs */
 
 .glassy-div {
   background-color: rgba(255, 255, 255, 0.123);
@@ -127,5 +139,47 @@
 
 .bg-blur {
   backdrop-filter: blur(8px);
-  background-color: rgba(255, 255, 255, 0.2); /* Change the color and opacity as needed */
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* animation for hero-icon */
+
+.up-and-down-div {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: moveUpDown 2s infinite;
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+}
+
+/* CSS for scrollbar */
+/* Hide the default scrollbar in WebKit-based browsers */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
 }
