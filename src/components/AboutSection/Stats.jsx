@@ -45,7 +45,7 @@ function Stats() {
         initial={{ opacity: 0, scale: 0 }}
         animate={controls}
         transition={{ duration: 1 }}
-        className='w-full flex justify-between'
+        className="w-full flex justify-between"
       >
         {statsData.map((data) => (
           <div
@@ -54,19 +54,22 @@ function Stats() {
             key={data.number}
           >
             {isVisible && (
-              <CountUp end={data.number} duration={4} delay={1}>
-                {({ countUpRef }) => (
-                  <div className="flex flex-col justify-center items-center gap-3 md:py-5 lg:py-0">
-                    <div className=" text-4xl lg:text-5xl text-gradient font-semibold ">
-                      <span ref={countUpRef} />
-                      <span>+</span>
-                    </div>
-                    <div className="text-md md:text-lg capitalize">
-                      {data.title}
-                    </div>
-                  </div>
-                )}
-              </CountUp>
+              <div className="flex flex-col justify-center items-center gap-3 md:py-5 lg:py-0">
+                <div className=" text-4xl lg:text-5xl text-gradient font-semibold ">
+                  <span>
+                    <CountUp
+                      start={0}
+                      end={data.number}
+                      duration={5}
+                      className=""
+                    />
+                  </span>
+                  <span>+</span>
+                </div>
+                <div className="text-md md:text-lg capitalize">
+                  {data.title}
+                </div>
+              </div>
             )}
           </div>
         ))}
