@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import tools from './data';
+import tools from './SkillsSection/data';
 
 const TechTools = () => {
   const [isHovered, setIsHovered] = useState(false);

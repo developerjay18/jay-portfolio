@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MongoDB, Express, ReactJS, NodeJS } from '../../assets';
-import { TechTools } from './TechTools';
+import TechTools from '.././TechTools';
 
 function SkillsSection() {
   // for text strechs
