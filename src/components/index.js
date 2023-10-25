@@ -5,7 +5,6 @@ import HeroSection from './HeroSection/HeroSection';
 import AboutSection from './AboutSection/AboutSection';
 import Stats from './AboutSection/Stats';
 import SkillsSection from './SkillsSection/SkillsSection';
-import TechTools from './SkillsSection/TechTools.jsx';
 import ProjectsSection from './ProjectsSection/ProjectsSection';
 import ProjectCard from './ProjectsSection/ProjectCard';
 import ContactSection from './ContactSection/ContactSection';
@@ -18,7 +17,6 @@ export {
   AboutSection,
   Stats,
   SkillsSection,
-  TechTools,
   ProjectsSection,
   ProjectCard,
   ContactSection
