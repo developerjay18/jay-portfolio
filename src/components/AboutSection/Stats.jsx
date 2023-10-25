@@ -45,7 +45,7 @@ function Stats() {
         initial={{ opacity: 0, scale: 0 }}
         animate={controls}
         transition={{ duration: 1 }}
-        className="w-full flex justify-between"
+        className="w-full flex justify-between flex-col md:flex-row gap-12 md:gap-0"
       >
         {statsData.map((data) => (
           <div
@@ -60,7 +60,7 @@ function Stats() {
                     <CountUp
                       start={0}
                       end={data.number}
-                      duration={5}
+                      duration={7}
                       className=""
                     />
                   </span>

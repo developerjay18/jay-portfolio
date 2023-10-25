@@ -1,25 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { HeroIcon, WhatsappIcon } from '../../assets';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
 import { Link } from 'react-router-dom';
 
 function HeroSection() {
-  const [isUp, setIsUp] = useState(false);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsUp((prevIsUp) => !prevIsUp);
-    }, 1000); // Adjust the interval duration as needed
-    return () => clearInterval(interval);
-  }, []);
-
-  const iconStyle = {
-    width: '90%',
-    height: '90%',
-    y: isUp ? -60 : 0,
-  };
-
   const textVariants = {
     normal: {
       scaleX: 1,
@@ -99,14 +84,8 @@ function HeroSection() {
 
         {/* right section */}
 
-        <div className="right-down pt-20 md:pt-36 lg:pt-0 w-full lg:w-[40%] flex justify-center items-center">
-          <motion.div
-            initial={{ y: 0 }}
-            animate={iconStyle}
-            transition={{ duration: 1, ease: 'easeInOut' }}
-          >
-            <img src={HeroIcon} alt="hero-icon" />
-          </motion.div>
+        <div className="right-down pt-20 md:pt-36 lg:pt-0 w-full lg:w-[40%] flex justify-center items-center up-and-down-div">
+          <img src={HeroIcon} alt="hero-icon" className="w-full h-full" />
         </div>
       </div>
     </div>
