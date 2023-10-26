@@ -8,8 +8,14 @@ import SkillsSection from './SkillsSection/SkillsSection';
 import ProjectsSection from './ProjectsSection/ProjectsSection';
 import ProjectCard from './ProjectsSection/ProjectCard';
 import ContactSection from './ContactSection/ContactSection';
+import BottomBar from './BottomBar/BottomBar';
+import MenuLinks from './MenuLinks/MenuLinks';
+import Menu from './MenuLinks/Menu';
 
 export {
+  Menu,
+  MenuLinks,
+  BottomBar,
   Footer,
   Header,
   Container,
@@ -19,5 +25,5 @@ export {
   SkillsSection,
   ProjectsSection,
   ProjectCard,
-  ContactSection
+  ContactSection,
 };
