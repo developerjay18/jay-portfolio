@@ -1,3 +1,8 @@
+/* gloabl stylings */
+body {
+  scroll-behavior: smooth;
+}
+
 /* makes text gradient */
 
 .text-gradient {
@@ -182,4 +187,119 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.5);
+}
+
+/* menu links CSS */
+/* menu links */
+.menuLinks {
+  display: inline-block;
+  pointer-events: auto;
+}
+
+.menuLinks .menus {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14rem;
+  height: 14rem;
+  padding-left: 0;
+  margin: 0;
+}
+
+.menuLinks .menus li {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  list-style: none;
+  transition: 0.5s;
+  transition-delay: calc(0.05s * var(--i));
+  transform-origin: 1.8rem;
+  transform: rotate(0deg) translateX(5rem);
+}
+
+
+/* --> CSS for bottom bar (mobile)*/
+@media (max-width: 767px) {
+  .menuLinks .menus li{
+    transform-origin: 1rem;
+  }
+}
+
+
+.menuLinks .menus.active li {
+  transform: rotate(calc(360deg / 6 * var(--i))) translateX(-3rem);
+  opacity: 1;
+}
+
+.menuLinks .menus li a {
+  color: #000;
+  background: #ffcd00;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: rotate(calc(360deg / -6 * var(--i)));
+  transition: 1s;
+}
+
+.menuLinks .menus li a:hover {
+  position: relative;
+  transition: 0s;
+  color: #000;
+}
+
+.menuLinks .menus li a:hover::after {
+  content: '';
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  height: 8px;
+  width: 8px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+.menuLinks .menus li a:hover::before {
+  content: attr(data-title);
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: 1.5rem;
+  font-weight: 500;
+  color: #111;
+  font-size: 1rem;
+  white-space: nowrap;
+  color: white;
+}
+
+.menuLinks .menus li a svg {
+  transform: scale(2);
+}
+
+.menuLinks .menus .togglers {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background: #ffcd00;
+  border: 15px solid #ffcd00;
+  border-radius: 50%;
+  color: #2e2e2e;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: url('../../../assets/img/cursor-pointer.png'), auto;
+  z-index: 10;
+  font-size: 3rem;
+  transition: transform 0.5s;
+}
+
+.menuLinks .menus.active .togglers {
+  transform: rotate(315deg);
 }
