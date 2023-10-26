@@ -1,6 +1,7 @@
 /* gloabl stylings */
 body {
   scroll-behavior: smooth;
+  background-color: #151515;
 }
 
 /* makes text gradient */
@@ -214,18 +215,16 @@ body {
   list-style: none;
   transition: 0.5s;
   transition-delay: calc(0.05s * var(--i));
-  transform-origin: 1.8rem;
+  transform-origin: 2rem;
   transform: rotate(0deg) translateX(5rem);
 }
 
-
 /* --> CSS for bottom bar (mobile)*/
 @media (max-width: 767px) {
-  .menuLinks .menus li{
+  .menuLinks .menus li {
     transform-origin: 1rem;
   }
 }
-
 
 .menuLinks .menus.active li {
   transform: rotate(calc(360deg / 6 * var(--i))) translateX(-3rem);
@@ -261,21 +260,6 @@ body {
   width: 8px;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-}
-
-.menuLinks .menus li a:hover::before {
-  content: attr(data-title);
-  position: absolute;
-  top: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: auto;
-  height: 1.5rem;
-  font-weight: 500;
-  color: #111;
-  font-size: 1rem;
-  white-space: nowrap;
-  color: white;
 }
 
 .menuLinks .menus li a svg {
