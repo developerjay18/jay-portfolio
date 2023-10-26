@@ -5,8 +5,8 @@ function Header() {
   return (
     <div className="font-baiJamjuree px-7 md:px-24 bg-transparent sticky top-0 w-full z-20">
       <nav className="flex justify-between py-5 items-center">
-        <Link to={'/'}>
-          <div className="heading uppercase font-semibold text-3xl md:text-4xl text-whiteSecondary">
+        <Link to={'/'} className='tap-transp'>
+          <div className="heading uppercase font-semibold text-3xl md:text-4xl text-whiteSecondary tap-transp">
             JayRai
           </div>
         </Link>

@@ -57,6 +57,7 @@ function SkillsSection() {
         whileHover="stretched"
         initial="normal"
         variants={textVariants}
+        className='tap-transp'
       >
         <div className="text-2xl lg:text-3xl mt-5 cursor-pointer capitalize">
           Tech Stack
@@ -71,7 +72,7 @@ function SkillsSection() {
               initial="initial"
               whileHover="hover"
               variants={hoverVariants}
-              className="upward-hover-div  w-full h-full cursor-pointer"
+              className="upward-hover-div  w-full h-full cursor-pointer tap-transp"
             >
               <img
                 src={stackItem.url}
@@ -88,6 +89,7 @@ function SkillsSection() {
         whileHover="stretched"
         initial="normal"
         variants={textVariants}
+        className='tap-transp'
       >
         <div className="text-2xl lg:text-3xl mt-5 cursor-pointer capitalize">
           Technologies and tools

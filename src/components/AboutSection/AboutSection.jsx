@@ -31,6 +31,7 @@ function AboutSection() {
         whileHover="stretched"
         initial="normal"
         variants={textVariants}
+        className='tap-transp'
       >
         <div className="text-2xl lg:text-3xl cursor-pointer capitalize">
           Full stack web developer
