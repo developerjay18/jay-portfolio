@@ -7,7 +7,7 @@ function ContactSection() {
   const [data, setData] = useState({
     name: '',
     email: '',
-    message: '',
+    message: 'Message',
   });
 
   const handleChange = (e) => {
@@ -31,6 +31,12 @@ function ContactSection() {
       .catch((error) => {
         console.error('Email could not be sent:', error);
       });
+
+    setData({
+      name: '',
+      email: '',
+      message: 'Message',
+    });
   };
 
   return (
