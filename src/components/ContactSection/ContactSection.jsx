@@ -70,6 +70,7 @@ function ContactSection() {
                 className="capitalize p-2 py-3 glassy-div md:w-1/2 rounded-md focus:outline-none cursor-pointer focus:bg-[#474747] w-full"
                 value={data.name}
                 onChange={handleChange}
+                required
               />
               <input
                 type="email"
@@ -79,6 +80,7 @@ function ContactSection() {
                 className="w-full md:w-1/2 p-2 py-3 glassy-div rounded-md focus:outline-none cursor-pointer focus:bg-[#474747]"
                 value={data.email}
                 onChange={handleChange}
+                required
               />
             </div>
             <textarea
@@ -90,6 +92,7 @@ function ContactSection() {
               defaultValue="Message"
               value={data.message}
               onChange={handleChange}
+              required
             ></textarea>
             <button
               type="submit"
