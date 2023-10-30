@@ -23,7 +23,7 @@ function Footer() {
       ImgURL: InstaIcon,
     },
     {
-      slug: 'mailto:raijay2003@gmail.com',
+      slug: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=raijay2003.com',
       ImgURL: GmailIcon,
     },
     {
@@ -36,18 +36,18 @@ function Footer() {
     <div className="font-baiJamjuree px-7 md:px-24 py-8 lg:py-14 bg-footer-section text-whitePrimary flex flex-col lg:flex-row gap-10 lg:gap-0 justify-between items-center">
       {/* left section */}
       <div className="left-up">
-        <div className="logo heading uppercase font-semibold text-3xl md:text-4xl text-whiteSecondary">
+        <div className="logo heading uppercase font-semibold text-3xl md:text-4xl text-whiteSecondary z-20">
           jayrai
         </div>
       </div>
       {/* right section */}
-      <div className="right-down w-full lg:w-1/2 flex flex-col gap-10">
-        <div className="flex flex-col gap-7">
-          <div className="social-icons flex gap-6 justify-center lg:justify-end items-center">
+      <div className="right-down w-full lg:w-1/2 flex flex-col gap-10 ">
+        <div className="flex flex-col gap-7 ">
+          <div className="social-icons flex gap-6 justify-center lg:justify-end items-center ">
             {socialIcons.map((social) => (
               <Link
                 to={social.slug}
-                className="w-[10%] lg:w-[7%]"
+                className="w-[10%] lg:w-[7%] z-10 tap-transp"
                 key={social.slug}
               >
                 <div className="cursor-pointer w-full">
