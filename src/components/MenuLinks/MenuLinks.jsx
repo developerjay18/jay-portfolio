@@ -13,7 +13,7 @@ const MenuLinks = () => {
     >
       <ul className={`menus ${!click ? 'active' : ''}`}>
         <div
-          className="togglers ml-[-191px] md:ml-[-170px]"
+          className="togglers ml-[-0px] md:ml-[32px] cursor-pointer"
           onClick={() => setClick(!click)}
         >
           <i className="fa-solid fa-circle-plus"></i>
