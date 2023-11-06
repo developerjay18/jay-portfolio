@@ -6,6 +6,7 @@ import {
   SkillsSection,
   ProjectsSection,
   ContactSection,
+  SliderSection,
 } from '../components';
 
 function Home() {
@@ -15,6 +16,7 @@ function Home() {
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />
+      <SliderSection />
       <ContactSection />
     </Container>
   );
