@@ -11,6 +11,7 @@ import ContactSection from './ContactSection/ContactSection';
 import BottomBar from './BottomBar/BottomBar';
 import MenuLinks from './MenuLinks/MenuLinks';
 import Menu from './MenuLinks/Menu';
+import SliderSection from './SliderSection/SliderSection.jsx';
 
 export {
   Menu,
@@ -26,4 +27,5 @@ export {
   ProjectsSection,
   ProjectCard,
   ContactSection,
+  SliderSection,
 };
