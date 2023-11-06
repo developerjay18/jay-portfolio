@@ -19,7 +19,7 @@ function ProjectsSection() {
   };
 
   return (
-    <div className="font-baiJamjuree px-7 md:px-24 py-8 lg:py-14 bg-right bg-[#121212] flex justify-center items-center flex-col text-whitePrimary gap-5 md:gap-8">
+    <div className="font-baiJamjuree px-7 md:px-24 py-8 lg:py-14 bg-[#121212] flex justify-center items-center flex-col text-whitePrimary gap-5 md:gap-8">
       {/* heading section */}
       <h2 className="text-3xl md:text-5xl py-1 font-bold capitalize text-gradient">
         Projects
